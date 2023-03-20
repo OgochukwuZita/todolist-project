@@ -57,6 +57,7 @@ body{
 .main input{
     background-color: #ed7b7b;
     border: 1px solid #ed7b7b;
+    padding-left: 1%;
     width: 25%;
     height: 40px;
 }
@@ -72,3 +73,4 @@ span p {
     position: relative;
     right: 3px;
 }
+/*Media Queries*/
