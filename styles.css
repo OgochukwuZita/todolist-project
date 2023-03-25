@@ -45,3 +45,7 @@ button, .button{
     width: 35em;
     background-color: #288BA8;
 }
+img{
+max-width: 100;
+display: block;
+}
