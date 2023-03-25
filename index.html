@@ -3,68 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>todolist-project</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<section id="main">
 <section class="header">
   <div class="heading">
     <h1>Todo list 2023</h1>
-    <span>
+    <div class="Finput">
+      <span>
    <form action="#" id="input-form">
     <input type="text" id="task" placeholder="What do you have planned?">
-    <button>Add new task</button>
    </form>
   </span>
+   <span>
+   <button>Add new task</button>
+  </span>
+  </div>
   </div>
 </section>
+<section class="main">
 <div class="title">
 <p>Today's tasks</p>
 </div>
 <section class="main">
-<span>
+<div class="task">
+  <span>
   <form action="#">
     <input type="text" id="task" value="Build a todolist-project">
-    <input type="button" value="Edit" class="button">
-    <input type="button" value="Delete" class="button">
   </form>
 </span>
-<br>
 <span>
+    <input type="button" value="Edit" class="button">
+  </span>
+  <span>
+    <input type="button" value="Delete" class="button">
+  </span>
+</div>
+<br>
+<div class="task">
+  <span>
   <form action="#">
     <input type="text" id="task" value="Attend stations of the cross by 5pm">
-    <input type="button" value="Edit" class="button">
-    <input type="button" value="Delete" class="button">
   </form>
-</span>
+  </span>
+  <span>
+    <input type="button" value="Edit" class="button">
+  </span>
+  <span>
+    <input type="button" value="Delete" class="button">
+  </span>
+</div>
 <br>
-<span>
+<div class="task">
+  <span>
   <form action="#">
-    <input type="text" id="task" value="Watch FATE: The twinx saga">
-    <input type="button" value="Edit" class="button">
-    <input type="button" value="Delete" class="button">
+    <input type="text" id="task" value="Watch FATE: The twinx saga ">
   </form>
 </span>
+<span>
+    <input type="button" value="Edit" class="button">
+  </span>
+  <span>
+    <input type="button" value="Delete" class="button">
+  </span>
+</div>
 
 <br>
-<span>
+<div class="task">
+  <span>
   <form action="#">
     <input type="text" id="task" value="Night out">
-    <input type="button" value="Edit" class="button">
-    <input type="button" value="Delete" class="button">
   </form>
 </span>
+    <span>
+    <input type="button" value="Edit" class="button">
+  </span>
+  <span>
+    <input type="button" value="Delete" class="button">
+  </span>
+</div>
 </section>
 <br>
 <div>
   <span>
 <p>Weldone</p>
 </span>
-<span>
-  <button><img src="https://thumbs.dreamstime.com/b/creative-design-good-job-icon-good-job-icon-118579485.jpg" alt="greatjob" width="45px"></button>
+<span id="image">
+  <button class="image"><img src="https://thumbs.dreamstime.com/b/creative-design-good-job-icon-good-job-icon-118579485.jpg" alt="greatjob" width="45px"></button>
 </span>
 </div>
-  <script src="index.js"></script>  
+</section>
+</section>
+<script src="index.js"></script>  
+
 </body>
 </html>
