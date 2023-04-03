@@ -2,50 +2,76 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-body{
-    margin: 10% 30%;
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: darkolivegreen;
     cursor: pointer;
-    background-color: #d9e2ec;
-    border: 5px solid linear-gradient (to right, #81d4fa, pink);
 }
-.Finput{
+.input-box{
+    margin-top: 50px;
+    width: 60%;
+}
+.input-box h1 {
+    color: white;
+    font-size: 40px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #523f41;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  .input-box form{
     display: flex;
-    gap: 2%;
-}
-.task{
-    display: flex;
-    gap: 1%;
-}
-p{
-    margin-bottom: 2%;
-    margin-top: 1%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-button, .button{
-    width: 7em;
-    height: 3em;
-}
-#task{
-    width: 20em;
-    height: 3em;
-    padding-left: 2%;
-}
-.image{
-    height: 4em;
-    background-color: #ffff;
-}
-.image img{
-    width: 45px;
-}
-#main{
-    border: 1px solid black;
-    border-radius: 10%;
-    padding: 3em ;
-    width: 35em;
-    background-color: #288BA8;
-}
-img{
-max-width: 100;
-display: block;
+    width: 100%;
+  }
+  .input-box form input {
+    border: none;
+    background-color:  #bbbebe;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    width: 90%;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .input-box form button {
+    border: none;
+    color: white;
+    background-color: burlywood;
+    font-size: 25px;
+    font-weight: 600;
+    height: 42px;
+    width: 10%;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .input-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  .input-box ul li {
+    padding: 10px;
+    background-color: #252525;
+  }
+  .input-box ul li i {
+    float: right;
+    color: chocolate;
+  }
+  .input-box ul li i:hover{
+    color: crimson;
+  }
+/*media query*/
+@media (max-width:800px) {
+    .input-box{
+       width: 85%;
+    }
 }

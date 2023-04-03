@@ -1,103 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>todolist-project</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>to-do-list</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
+
 <body>
-<section id="main">
-<section class="header">
-  <div class="heading">
-    <h1>Todo list 2023</h1>
-    <div class="Finput">
-      <span>
-   <form action="#" id="input-form">
-    <input type="text" id="task" placeholder="What do you have planned?">
-   </form>
-  </span>
-   <span>
-   <button>Add new task</button>
-  </span>
+  <div class="container">
+    <div class="input-box">
+      <h1>My todo list</h1>
+      <form>
+        <input type="text" placeholder="what do you have planned?" id="newTsk">
+        <button type="submit" id="addBtn">+</button>
+      </form>
+      <ul id="line">
+        <li>
+          <input type="text" value="Exercise" class="task" onfocus="getCurrentTask(this)" onblur="editTask(this)">
+          <i class="fa fa-trash" onclick="removeTask(this)"></i>
+        </li>
+      </ul>
+    </div>
   </div>
-  </div>
-</section>
-<section class="main">
-<div class="title">
-<p>Today's tasks</p>
-</div>
-<section class="main">
-<div class="task">
-  <span>
-  <form action="#">
-    <input type="text" id="task" value="Build a todolist-project">
-  </form>
-</span>
-<span>
-    <input type="button" value="Edit" class="button">
-  </span>
-  <span>
-    <input type="button" value="Delete" class="button">
-  </span>
-</div>
-<br>
-<div class="task">
-  <span>
-  <form action="#">
-    <input type="text" id="task" value="Attend stations of the cross by 5pm">
-  </form>
-  </span>
-  <span>
-    <input type="button" value="Edit" class="button">
-  </span>
-  <span>
-    <input type="button" value="Delete" class="button">
-  </span>
-</div>
-<br>
-<div class="task">
-  <span>
-  <form action="#">
-    <input type="text" id="task" value="Watch FATE: The twinx saga ">
-  </form>
-</span>
-<span>
-    <input type="button" value="Edit" class="button">
-  </span>
-  <span>
-    <input type="button" value="Delete" class="button">
-  </span>
-</div>
-
-<br>
-<div class="task">
-  <span>
-  <form action="#">
-    <input type="text" id="task" value="Night out">
-  </form>
-</span>
-    <span>
-    <input type="button" value="Edit" class="button">
-  </span>
-  <span>
-    <input type="button" value="Delete" class="button">
-  </span>
-</div>
-</section>
-<br>
-<div>
-  <span>
-<p>Weldone</p>
-</span>
-<span id="image">
-  <button class="image"><img src="https://thumbs.dreamstime.com/b/creative-design-good-job-icon-good-job-icon-118579485.jpg" alt="greatjob" width="45px"></button>
-</span>
-</div>
-</section>
-</section>
-<script src="index.js"></script>  
-
 </body>
+
 </html>
