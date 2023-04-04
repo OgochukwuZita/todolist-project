@@ -7,25 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>to-do-list</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="input-box">
-      <h1>My todo list</h1>
-      <form>
-        <input type="text" placeholder="what do you have planned?" id="newTsk">
-        <button type="submit" id="addBtn">+</button>
-      </form>
-      <ul id="line">
-        <li>
-          <input type="text" value="Exercise" class="task" onfocus="getCurrentTask(this)" onblur="editTask(this)">
-          <i class="fa fa-trash" onclick="removeTask(this)"></i>
-        </li>
-      </ul>
+
+  <div class="main">
+    <div class="container">
+      <h2>My Todo-List</h2>
+      <div class="input-group">
+        <input type="text" id="text-input-field" type="button" placeholder="What do you have planned today?">
+        <button id="addBtn">
+          +
+        </button>
+      </div>
+      <!--input-group end-->
+      <div class="todos-container">
+        <!--<div class="todo-item-container">
+          <p id="todo-text">  cook </p>
+          <button id="edit" type="button">
+            Edit
+          </button>
+          <button id="delete" type="button">
+            delete
+          </button>
+        </div>-->
+      </div>
     </div>
+    <!--main container end-->
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
