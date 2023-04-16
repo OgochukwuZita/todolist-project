@@ -73,7 +73,6 @@
     font-size: 20px;
     letter-spacing: 1px;
     width: 100%;
-    user-select: none;
   }
   .line-through{
     text-decoration: line-through;

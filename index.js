@@ -1,52 +1,26 @@
-let textInputField = document.querySelector('#text-input-field');
-let addButton = document.querySelector('#addBtn');
-let todosContainer = document.querySelector('#todos-container');
-
-addButton.addEventListener("click", ()=>{
-    if (textInputField.value.trim().length == '') {
-        return;
-
-        textInputField.value = '';
 
 
-    }else if (textInputField.value === "") {
-       alert("Please add a new task!"); 
-    }  
-    const todoItemContainer = document.createElement('div');
-    todoItemContainer.classList.add('todo-item-container');
-    todosContainer.appendChild(todoItemContainer);
+let Todo = [];
 
-    const todoText = document.createElement('p');
-    todoText.id = 'todo-text';
-    todoText.innerText = textInputField.value;
-    todoItemContainer.appendChild(todoText);
+const addBtn = document.getElementById("addBtn");
+const textField = document.getElementById("text-input-field");
+const editBtn = document.getElementById("editBtn")
+const todo = document.getElementsByClassName("todos-container")
 
-    todoText.addEventListener('dblclick', ()=>{
-        todoText.classList.add('line-through');
-        editButton.setAttribute('enabled','enabled');
-    })
+addBtn.addEventListener("click",()=>{
+    if (textField.value.trim() === "") {
+        return(
+            alert("Please add a task!")
+        );
+    }
 
-    const editButton = document.createElement('button');
-    editButton.id = 'edit';
-    editButton.innerText = 'Edit';
-    todoItemContainer.appendChild(editButton);
-
-    editButton.addEventListener('click',()=>{
-        textInputField.value = todoText.innerText;
-        const parent = editButton.parentElement;
-        parent.parentElement.removeChild(parent);
-    })
-
-    const deleteButton = document.createElement('button');
-    editButton.id = 'delete';
-    editButton.innerText = 'Delete';
-    todoItemContainer.appendChild(deleteButton);
-
-    deleteButton.addEventListener('click',()=>{
-        const parent = deleteButton.parentElement;
-        parent.parentElement.removeChild(parent);
-    });
+})
+addBtn.addEventListener("click",()=>{
+    return(
+    textField.value = "");
     
-    })
- 
+})
+
+
+
 
