@@ -16,16 +16,20 @@
       <h2>My Todo-List</h2>
       <div class="input-group">
         <input type="text" id="text-input-field" type="button" placeholder="What do you have planned today?">
+        <input type="hidden" id="Index" />
         <button id="addBtn">
           +
         </button>
-        <button id="editBtn">
-        Edit
-        </button>
+        <!--<button id="editBtn">
+      edit
+        </button>-->
+
       </div>
+      <ul id="todos-container"></ul>
+
       <!--input-group end-->
-      <div class="todos-container">
-        <!--<div class="todo-item-container">
+      <!--<div id="todos-container">
+        <div class="todo-item-container">
           <p id="todo-text">  cook </p>
           <button id="edit" type="button">
             Edit

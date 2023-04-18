@@ -11,11 +11,11 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: darkolivegreen;
+    background-color: rgb(244, 246, 242);
     cursor: pointer;
 }
 .container{
-    margin-top: 50px;
+    margin-top: 30px;
     width: 60%;
 }
 .container h2 {
@@ -23,8 +23,8 @@
     font-size: 40px;
     padding: 10px 0;
     text-align: center;
-    border-radius: 5px;
-    background-color: #523f41;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #020202;
     font-family:Verdana, Geneva, Tahoma, sans-serif
   }
   .input-group {
@@ -40,19 +40,19 @@
     width: 90%;
     outline: none;
     border: none;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 0px 0px 0px;
   }
   .input-group button {
     border: none;
-    color: rgb(16, 16, 16);
-    background-color: burlywood;
+    color: rgb(169, 167, 167);
+    background-color: rgb(39, 39, 38);
     font-size: 25px;
     font-weight: 600;
-    height: 42px;
+    height: 43px;
     width: 10%;
     outline: none;
     border: none;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 0px 5px 0px;
   }
   .todo-item-container{
     display: flex;
@@ -67,7 +67,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   button:hover{
-    background-color: chocolate;
+    background-color: rgb(26, 13, 3);
   }
   #todo-text {
     font-size: 20px;
@@ -78,9 +78,32 @@
     text-decoration: line-through;
     color: brown;
   }
+
+ul{
+width: 35%;
+margin: 28px auto;
+list-style-type:circle;
+float: left;
+}
+ul li{
+  margin-bottom: 10px;
+  margin-left: 25px;
+  padding: 10px;
+}
+ul li:nth-child(even){
+  background-color: rgb(169, 167, 167);
+}
+ul li a{
+  float: right;
+  color: rgb(26, 13, 3);
+  margin: 5px;
+}
 /*media query*/
 @media (max-width:800px) {
     .input-box{
        width: 85%;
+    }
+    .todos-container{
+      width: 85%;
     }
 }
