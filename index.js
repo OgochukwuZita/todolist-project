@@ -9,19 +9,16 @@ const todo = document.getElementById("todos-container");
 
 
 
-addBtn.addEventListener("click",()=>{
-    if (textField.value.trim() === "") {
-    alert("Please add a task!");
-       
-    }
-
-})
-
 addBtn.addEventListener("click",function(){
+    if (textField.value.trim() ==='') {
+        alert("Please add a task!");
+       
+    } else{
     Todo.unshift(textField.value);
     localStorage.setItem('todoz',JSON.stringify(Todo));
     textField.value=""
     renderTodo();
+}
 }
 )
 
