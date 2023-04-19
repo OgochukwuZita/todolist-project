@@ -80,7 +80,7 @@
   }
 
 ul{
-width: 35%;
+width: 98%;
 margin: 28px auto;
 list-style-type:circle;
 float: left;
@@ -89,9 +89,6 @@ ul li{
   margin-bottom: 10px;
   margin-left: 25px;
   padding: 10px;
-}
-ul li:nth-child(even){
-  background-color: rgb(169, 167, 167);
 }
 ul li a{
   float: right;
@@ -103,7 +100,5 @@ ul li a{
     .input-box{
        width: 85%;
     }
-    .todos-container{
-      width: 85%;
-    }
+    
 }

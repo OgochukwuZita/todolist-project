@@ -1,6 +1,6 @@
 
 
-const Todo = [];
+const Todo = localStorage.getItem('todoz')? JSON.parse(localStorage.getItem('todoz')):[];
 
 const addBtn = document.getElementById("addBtn");
 const textField = document.getElementById("text-input-field");
@@ -16,13 +16,10 @@ addBtn.addEventListener("click",()=>{
     }
 
 })
-/*addBtn.addEventListener("click",()=>{
-    return(
-    textField.value);
-})*/
 
 addBtn.addEventListener("click",function(){
     Todo.unshift(textField.value);
+    localStorage.setItem('todoz',JSON.stringify(Todo));
     textField.value=""
     renderTodo();
 }
@@ -37,6 +34,7 @@ function renderTodo(){
 }
 
 function delteItem(i){
+    localStorage.removeItem('todoz');
     Todo.splice(i,1);
     renderTodo();
 }
